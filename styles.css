@@ -1,0 +1,430 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    text-align: center;
+}
+
+header {
+    background: #FFE0E0;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    /*font-weight: bold;*/
+}
+
+.intro {
+    margin: 40px 0;
+    font-size: 1.25em;
+}
+
+.recipes {
+    padding: 20px;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.recipe-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background: #FFE0E0;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.image {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+.text {
+    max-width: 55%; /* Mantiene el ancho del texto */
+    font-family: Arial, sans-serif;
+    font-size: 20px; /* Aumenta el tamaño del texto */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+.red { color: #e74c3c; }
+.green { color: #27ae60; }
+.orange { color: #e67e22; }
+
+.subscribe-section {
+    background-color: #043D1E;
+    padding: 20px;
+    color: #FCEAE4;
+}
+
+.subscribe-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.subscribe-text {
+    max-width: 60%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column; /* Poner los campos en columna */
+    align-items: center;
+    gap: 10px; /* Espaciado entre los campos */
+}
+
+.subscribe-form input {
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    width: 250px;
+    background-color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.subscribe-form button {
+    padding: 10px 15px;
+    background-color: #F9A798; /* Color rosa */
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.subscribe-form button:hover {
+    background-color: #f78c82;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.resources-container {
+    display: flex;
+    align-items: center; 
+    gap: 60px; 
+    padding: 40px 200px;
+}
+
+.resources-image {
+    max-width: 30%;
+    border-radius: 10px;
+}
+
+.resources-text {
+    max-width: 60%;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.resources-text h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.resources-text h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.resources-text p {
+    margin-bottom: 10px;
+}
+
+.resources-text strong {
+    font-weight: bold;
+}
+
+.book-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.book-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.book-video {
+    margin-bottom: 20px;
+}
+
+.book-video img {
+    border-radius: 10px;
+}
+
+.book-description {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.book-description ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.book-description ul li {
+    margin-bottom: 10px;
+}
+
+.book-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.book-images img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.video-wrapper {
+    width: 100%;
+}
+
+.book-text {
+    width: 130%;
+    max-width: 800px; 
+    margin-top: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.advertisement {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.advertisement h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#ad-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.ad-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.ad-product img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.ad-product h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.ad-product p {
+    font-size: 14px;
+    color: #555;
+}
+
+.ad-product .ad-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.ad-product .ad-button {
+    display: inline-block;
+    background-color: #27ae60;
+    color: white;
+    padding: 8px 12px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.ad-product .ad-button:hover {
+    background-color: #219150;
+}
+
+.ad-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+}
+
+.ad-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ad-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.ad-card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.buy-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Asegura que el carrusel tenga un tamaño adecuado y centrado */
+.advertisement {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los hijos horizontalmente */
+    justify-content: center;
+    text-align: center;
+}
+
+/* Establece un tamaño para el carrusel sin desbordamientos */
+.carousel {
+    width: 100%; /* Asegura que no se quede corto */
+    max-width: 600px; /* Ajusta el tamaño según sea necesario */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Asegura que los elementos del carrusel ocupen todo el espacio disponible */
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajusta las imágenes para que no se corten */
+.carousel-item img {
+    width: auto;
+    height: auto;
+    max-height: 300px; /* Ajusta según necesidad */
+    object-fit: contain; /* Evita cortes y mantiene la proporción */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+}
+
+/* Centra el texto y evita que se corte */
+.carousel-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Ajusta los botones de navegación */
+.carousel-control-prev, 
+.carousel-control-next {
+    width: 10%;
+}
+
+
+/* Botón de compra */
+.btn-primary {
+    background-color: #ff6600;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #cc5200;
+}
+
+
+body:not(.advertisement) {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    text-align: center;
+}
+
+.advertisement .carousel-item {
+    margin-right: 0 !important;
+}
